@@ -29,6 +29,8 @@
   	- [Running in localhost](#local)
   	- [ngrok Deployment](#ngrok)
 - [Conclusion](#conclusion)
+	- [Reflection](#reflection)
+	- [Improvement](#improvement)
 - [Software Requirements](#sw)
 - [Files](#files)
 - [Credits and Acknowledgements](#credits)
@@ -254,8 +256,18 @@ As we can see from the [distribution of messages categories](#imbalance), the da
 
 ![results](gif/eval.PNG)
 
- It is evident that some of the highly represented categories have low evaluation scores while some of the less represented categories have very high scores. Since there are very few 1s in these less represented categories and so their metrics are still high even if they are all classified as 0s. As a result, it's important to not be too influenced by these values. It seems reasonable to seek to improve the performance of the original "lowest" performing categories.Also, some of the messages in the dataset seemed mislabelled.  So, in order to overcome these limitations, we need to take more examples for the less represented categories and need to do some manual clean-up of some mislabelled messages. Also, we have to use micro-averaging or weighted-averaging in our evaluation rather than macro-averaging.
+ 
 <hr/> 
+
+[Back to Table of Content](#index)
+
+< a id='improvement'></a>
+### Improvement
+
+These are the improvement ideas on this present application:
+1. AUGMENT THE TRAINING DATA: Augmenting the training and/or validation set might help improve model performance.
+1. OVERLAY DOG EARS ON DETECTED HUMAN HEADS: Overlay a Snapchat-like filter with dog ears on detected human heads. You can determine where to place the ears through the use of the OpenCV face detector, which returns a bounding box for the face. If you would also like to overlay a dog nose filter, some nice tutorials for facial keypoints detection exist [here](https://www.kaggle.com/c/facial-keypoints-detection/details/deep-learning-tutorial).
+1. ADD FUNCTIONALITY FOR DOG MUTTS: Currently, if a dog appears 51% German Shephard and 49% poodle, only the German Shephard breed is returned. The algorithm is currently guaranteed to fail for every mixed breed dog. Of course, if a dog is predicted as 99.5% Labrador, it is still worthwhile to round this to 100% and return a single breed; so, you will have to find a nice balance.
 
 [Back to Table of Content](#index)
 
