@@ -24,10 +24,9 @@
 - [Refinement](#refine)
 - [Model Evaluation and Validation](#eval)
 - [Justification](#just)
-- [Conclusion](#conclusion)
-	- [Reflection](#reflection)
-	- [Improvement](#improvement)
-- [Step 8](#flask): Flask Web App
+- [Reflection](#reflection)
+- [Improvement](#improvement)
+- [Flask Web App](#flask)
   	- [Dog Detector](#dog)
   	- [Human Detector](#human)
   	- [Unknown Detector](#unknown)
@@ -235,52 +234,22 @@ These are the improvement ideas on this present application:
 
 <a id='flask'></a>
 ### Flask Web App
-The Flask web app serves two purposes:
+The Flask web app serves three purposes:
 
-- Dataset Visualization
-- Message categorization
+- Dog/Human/Unknown Detection
+- Breed Prediction
+- Top5 Prediction
 
-<a id='visual'></a>
-#### 2.3.1. Data Visualization
-The web app provides the following visualizations related to dataset:
+### Dog detection
+![dog breed](dog_breed.PNG)
 
-**_Screenshot: Distribution of message genres_**
+### Human or Unknown Detection
+![human unknown](human_unknown.PNG)
 
-![Distribution of message genres](gif/graph1.PNG)
-<a id='imbalance'></a>
-**_Screenshot: Distribution of message categories_**
+### Top-5 Prediction
+![top-5](top5.PNG)
 
-![Distribution of message categories](gif/graph2.PNG)
 
-**_Screenshot: Distribution of messages lengths_**
-
-![Distribution of messages lengths](gif/graph3.PNG)
-
-**_Screenshot: Correlation of message categories_**
-
-![Correlation of message categorie](gif/graph4.PNG)
-
-**_Screenshot: Messages and categories counts_**
-
-![Messages and categories counts](gif/graph5.PNG)
-<hr/> 
-
-[Back to Table of Content](#index)
-
-<a id='category'></a>
-#### 2.3.2. Message  Categoriztion
-The web app lets an user enter an emergency message during a natural disaster, e.g. _"We're asking for water, medical supply, food"_.
-
-**_Screenshot: New Message_**
-
-![New Message](gif/new.PNG)
-
-After submitting the message, the web app will classify the message into categories so that appropriate relief agency can be reached out for help.
-
-**_Screenshot: Message Categorization_**
-
-![results](gif/result.PNG)
-<hr/> 
 
 [Back to Table of Content](#index)
 
