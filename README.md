@@ -198,7 +198,7 @@ The performance can be further improved by using some other pretrained model suc
 ## Justification
 Due to less number of dog images of certain breeds, the model finds it difficult to predict some breeds.  
 We have observed that the model couldn’t classify between Great pyrenees and Kuvasz, which both are white, big, and fluffy.
-![Great pyrenees](images/Great_pyrenees.jpg)| ![Kuvasz](images/Kuvasz.jpg)
+![Great pyrenees](images/Great_pyrenees.jpg)| ![Kuvasz]<img src="images/Kuvasz.jpg" width="40%">
 Also we have found the model fails to correctly classify german wirehaired pointer and wirehaired pointing griffon which look quite similar.
 ![german wirehaired pointer](images/German_wirehaired_pointer.jpg)| ![wirehaired pointing griffon](images/Wirehaired_pointing_griffon.jpg)
 It also couldn’t distinguish between Mastiff and Bullmastiff, which is a mix between a bulldog and a mastiff.
