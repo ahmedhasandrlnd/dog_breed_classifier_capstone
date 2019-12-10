@@ -170,6 +170,8 @@ In our first design, we have used transfer learning to create a CNN using VGG-16
 Here are some missclassified images (top-5 error images) from the second model prediction:
 ![top-5](images/model2_top5.PNG)
 
+From these two figures, we can see that out of these 9 images, 5 images were misclassified by both models. But each model made some unique mistakes as well from the other model.
+
 <br/>
 <hr/> 
 
