@@ -314,7 +314,7 @@ This project uses **Python 3.6.6** and the necessary libraries are mentioned in 
 |   |       home.html			# home page
 |   |       layout.html			# layout page
 |   |                  
-|	+---data                    # data folder to hold dog and human images dataset 
+|   +---data                    # data folder to hold dog and human images dataset 
 |   | 
 |   +---model   				# saved model folder 
 |       
