@@ -181,7 +181,13 @@ From these two figures, we can see that out of these 9 images, 5 images were mis
 
 <a id='eval'></a>
 ## Model Evaluation and Validation
-Now, we are going to show the comparison of performance metrics of two of our models using the transfer learning techniques. The first model used VGG-16 bottleneck features and the second model used VGG-19 bottleneck features. Out of 836 test images, the first model misclassified 128 images as top-1 error, 21 images as top-3 error and 10 images as top-1 error which gives a top-1 error rate of 15.3%, top-3 erro rate of 2.5% and top-5 error rate of 1.19%. On the contrary, the second model misclassified 110 images as top-1 error, 17 images as top-3 error and 9 images as top-1 error which gives a top-1 error rate of 13.5%, top-3 erro rate of 2.05% and top-5 error rate of 1.07%.
+Now, we are going to show the comparison of performance metrics of two of our models using the transfer learning techniques. The first model used VGG-16 bottleneck features and the second model used VGG-19 bottleneck features. Out of 836 test images, the first model misclassified 128 images as top-1 error, 21 images as top-3 error and 10 images as top-1 error which gives a top-1 error rate of 15.3%, top-3 error rate of 2.5% and top-5 error rate of 1.19%. On the contrary, the second model misclassified 110 images as top-1 error, 17 images as top-3 error and 9 images as top-1 error which gives a top-1 error rate of 13.5%, top-3 error rate of 2.05% and top-5 error rate of 1.07%.
+
+|         Model          |      Accuracy     | Top-1 Error Rate | Top-3 Error Rate | Top-5 Error Rate |
+| :--------------------: | :---------------: | :--------------: | :--------------: | :--------------: | 
+|    Pretrained VGG16    |      84.70%       |      15.30%      |      2.50%       |      1.19%       |
+|    Pretrained VGG19    |      86.85%       |      13.15%      |      2.03%       |      1.07%       |
+
 <br/>
 <hr/> 
 
