@@ -5,6 +5,8 @@
 
 # Dog Breed Classifier
 
+![Dog App](images/dog_app.gif)
+
 <a id='index'></a>
 ## Table of Contents
 - [Project Overview](#overview)
@@ -22,10 +24,10 @@
 - [Refinement](#refine)
 - [Model Evaluation and Validation](#eval)
 - [Justification](#just)
-
-
-  - [Step 7](#step7): Test Your Algorithm
-  - [Step 8](#flask): Flask Web App
+- [Conclusion](#conclusion)
+	- [Reflection](#reflection)
+	- [Improvement](#improvement)
+- [Step 8](#flask): Flask Web App
   	- [Dog Detector](#dog)
   	- [Human Detector](#human)
   	- [Unknown Detector](#unknown)
@@ -36,9 +38,7 @@
   - [Starting the Web App](#starting)
   	- [Running in localhost](#local)
   	- [ngrok Deployment](#ngrok)
-- [Conclusion](#conclusion)
-	- [Reflection](#reflection)
-	- [Improvement](#improvement)
+
 - [Software Requirements](#sw)
 - [Files](#files)
 - [Credits and Acknowledgements](#credits)
@@ -233,18 +233,8 @@ These are the improvement ideas on this present application:
 
 [Back to Table of Content](#index)
 
-
-
-
-
-<a id='step7'></a>
-### Step 7: Test Your Algorithm
-In this step, we test our algorithm at least six images on our computer. We've used at least two human and two dog images. 
-
-[Back to Table of Content](#index)
-
 <a id='flask'></a>
-### 2.3. Flask Web App
+### Flask Web App
 The Flask web app serves two purposes:
 
 - Dataset Visualization
