@@ -46,7 +46,6 @@
 
 <a id='overview'></a>
 ## Project Overview
-Brittany                                    | Welsh Springer Spaniel
 -                                           | - 
 <img src="images/Brittany.jpg" width="100"> | <img src="images/Welsh_springer_spaniel.jpg" width="200">
 In this project, we are developing an application we are building a dog-breed classifier that could be used as part of a mobile or web app. This application  will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. If it detects neither a dog nor a human, it will give an appropriate message. <br/>
