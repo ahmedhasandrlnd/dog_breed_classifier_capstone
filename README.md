@@ -5,8 +5,6 @@
 
 # Dog Breed Classifier
 
-<a id='video'></a>
-![Dog App](images/dog_app.gif)
 
 <a id='index'></a>
 ## Table of Contents
@@ -31,7 +29,7 @@
   	- [Dog detection and Breed Prediction](#dog)
   	- [Human or Unknown Detection](#human)
   	- [Top5 Prediction](#top5)
-- [nWeb App Usage Instructions](#run)
+- [Web App Usage Instructions](#run)
    	- [Running in localhost](#local)
   	- [ngrok Deployment](#ngrok)
 
@@ -41,8 +39,7 @@
 
 
 <a id='video'></a>
-**_Video Demo of the deployed App_**
-![Disaster Response App](gif/disaster.gif)
+![Dog App](images/dog_app.gif)
 <hr/> 
 
 [Back to Table of Content](#index)
@@ -285,26 +282,8 @@ This will create a temporary URL _(http://ca38d987.ngrok.io)_ via which we can a
 
 [Back to Table of Content](#index)
 
-<a id='conclusion'></a>
-
-## 4. Conclusion
-
-As we can see from the [distribution of messages categories](#imbalance), the dataset is highly imbalanced. It gives a very interesting evaluation results as given below:
-
-**_Screenshot: Evaluation Matrix_**
-
-![results](gif/eval.PNG)
-
- 
-<hr/> 
-
-[Back to Table of Content](#index)
-
-
-
 <a id='sw'></a>
-
-## 5. Software Requirements
+## Software Requirements
 This project uses **Python 3.6.6** and the necessary libraries are mentioned in _requirements.txt_.
 <hr/> 
 
@@ -359,7 +338,7 @@ This project uses **Python 3.6.6** and the necessary libraries are mentioned in 
 
 <a id='credits'></a>
 
-## 7. Credits and Acknowledgements
+## Credits and Acknowledgements
 
 The web app is designed by following [Flask tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH) by Corey Schafer.
 
