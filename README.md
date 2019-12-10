@@ -5,6 +5,7 @@
 
 # Dog Breed Classifier
 
+<a id='video'></a>
 ![Dog App](images/dog_app.gif)
 
 <a id='index'></a>
@@ -27,15 +28,11 @@
 - [Reflection](#reflection)
 - [Improvement](#improvement)
 - [Flask Web App](#flask)
-  	- [Dog Detector](#dog)
-  	- [Human Detector](#human)
-  	- [Unknown Detector](#unknown)
-  	- [TopK Prediction](#topk)
-- [Usage Instructions](#run)
-  - [Data Cleaning](#cleaning)
-  - [Training Classifier](#training)
-  - [Starting the Web App](#starting)
-  	- [Running in localhost](#local)
+  	- [Dog detection and Breed Prediction](#dog)
+  	- [Human or Unknown Detection](#human)
+  	- [Top5 Prediction](#top5)
+- [nWeb App Usage Instructions](#run)
+   	- [Running in localhost](#local)
   	- [ngrok Deployment](#ngrok)
 
 - [Software Requirements](#sw)
@@ -199,7 +196,7 @@ Due to less number of dog images of certain breeds, the model finds it difficult
 We have observed that the model couldn’t classify between Great pyrenees and Kuvasz, which both are white, big, and fluffy. <br/>
 [Great pyrenees]<img src="images/Great_pyrenees.jpg" width="20%">| [Kuvasz]<img src="images/Kuvasz.jpg" width="30%"> <br/>
 Also we have found the model fails to correctly classify german wirehaired pointer and wirehaired pointing griffon which look quite similar. <br/>
-[german wirehaired pointer]<img src="images/German_wirehaired_pointer.jpg" width="20%">| [wirehaired pointing griffon]<img src="images/Wirehaired_pointing_griffon.jpg" width="30%"> <br/>
+[german wirehaired pointer]<img src="images/German_wirehaired_pointer.jpg" width="20%">| [wirehaired pointing griffon]<img src="images/Wirehaired_pointing_griffon.jpg" width="20%"> <br/>
 It also couldn’t distinguish between Mastiff and Bullmastiff, which is a mix between a bulldog and a mastiff.
 <br/>
 [Bulldog]<img src="images/Bulldog.jpg" width="20%">|[Mastiff]<img src="images/Mastiff.jpg" width="20%">|[Bullmastiff]<img src="images/Bullmastiff.jpg" width="20%"> <br/>
@@ -240,80 +237,38 @@ The Flask web app serves three purposes:
 - Breed Prediction
 - Top5 Prediction
 
-### Dog detection
+<a id='dog'></a>
+### Dog detection and Breed Prediction
 ![dog breed](images/dog_breed.PNG)
 
+<a id='human'></a>
 ### Human or Unknown Detection
 ![human unknown](images/human_unknown.PNG)
 
+<a id='top5'></a>
 ### Top-5 Prediction
 ![top-5](images/top5.PNG)
 
-
-
-[Back to Table of Content](#index)
-
 <a id='run'></a>
+## Web App Usage Instructions
 
-## 3. Usage Instructions
-
-There are three steps to get up and runnning with the web app if you want to start from ETL process.
-
-<a id='cleaning'></a>
-
-### 3.1. Data Cleaning
-
-Go to the project directory and the run the following command:
-
-```
-python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-```
-
-The first two arguments are input data and the third argument is the SQLite Database in which we want to save the cleaned data. The ETL pipeline is in _process_data.py_.
-
-**_Screenshot: Data Claening_**
-
-![results](gif/cleaning.PNG)
-<hr/> 
-
-[Back to Table of Content](#index)
-
-<a id='training'></a>
-
-### 3.2. Training Classifier
-
-After the data cleaning process, run this command from the project directory:
-
-```
-python models/train_classifier.py data/DisasterResponse.db models/model.pkl
-```
-
-This will use cleaned data to train the model, improve the model with grid search and saved the model to a pickle file (_model.pkl_).
-<hr/> 
-
-[Back to Table of Content](#index)
-
-<a id='starting'></a>
-
-### 3.3. Starting the web app
+First we run our web app in our local server. Then we used ngrok to provide us a public URL for our app running in local server. 
 
 <a id='local'></a>
-#### 3.3.1. Running in localhost
-
-Now that we have cleaned the data and trained our model. Now it's time to see the prediction in a user friendly way.
+### Running in localhost
 
 Go the app directory and run the following command:
 
 <a id='com'></a>
 
 ```
-python disaster_prediction.py
+python dog_app.py
 ```
 
 This will start the web app and will direct you to a URL (_http://localhost:5000_) where you can enter messages and get classification results for it.
 
 <a id='ngrok'></a>
-#### 3.3.2. ngrok Deployment
+### ngrok Deployment
 
 To access our local running web app from a public endpoint such as Internet, we have used _ngrok_ which is a multiplatform tunnelling, reverse proxy software. After running the _ngrok_ program, we enter the command:
 
@@ -321,11 +276,11 @@ To access our local running web app from a public endpoint such as Internet, we 
 ngrok http 5000
 ``` 
 
-This will create a temporary URL _(http://37ca28eb.ngrok.io)_ via which we can access our web app running in our local computer from other computers. See [video demo](#video).
+This will create a temporary URL _(http://ca38d987.ngrok.io)_ via which we can access our web app running in our local computer from other computers. Since we are using a free plan, so the addreess will change after some time. See [video demo](#video).
 
 **_Screenshot: ngrok reverse tunnelling_**
 
-![results](gif/ngrok1.PNG)
+![results](images/ngrok1.PNG)
 <hr/> 
 
 [Back to Table of Content](#index)
