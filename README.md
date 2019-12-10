@@ -21,6 +21,9 @@
   - [Step 6](#step6): Write your Algorithm
 - [Refinement](#refine)
 - [Model Evaluation and Validation](#eval)
+- [Justification](#just)
+
+
   - [Step 7](#step7): Test Your Algorithm
   - [Step 8](#flask): Flask Web App
   	- [Dog Detector](#dog)
@@ -188,7 +191,18 @@ Now, we are going to show the comparison of performance metrics of two of our mo
 |    Pretrained VGG16    |      84.70%       |      15.30%      |      2.50%       |      1.19%       |
 |    Pretrained VGG19    |      86.85%       |      13.15%      |      2.03%       |      1.07%       |
 
+The performance can be further improved by using some other pretrained model such as Densenet, Resnet or Inception models.
 <br/>
+
+<a id='just'></a>
+## Justification
+Due to less number of dog images of certain breeds, the model finds it difficult to predict some breeds.  
+We have observed that the model couldn’t classify between Great pyrenees and Kuvasz, which both are white, big, and fluffy.
+![Great pyrenees](images/Great_pyrenees.jpg)| ![Kuvasz](images/Kuvasz.jpg)
+Also we have found the model fails to correctly classify german wirehaired pointer and wirehaired pointing griffon which look quite similar.
+![german wirehaired pointer](German_wirehaired_pointer.jpg)| ![wirehaired pointing griffon](Wirehaired_pointing_griffon.jpg)
+It also couldn’t distinguish between Mastiff and Bullmastiff, which is a mix between a bulldog and a mastiff.
+![Bulldog](Bulldog.jpg)|![Mastiff](Mastiff.jpg)|![Bullmastiff](Bullmastiff.jpg) 
 <hr/> 
 
 [Back to Table of Content](#index)
