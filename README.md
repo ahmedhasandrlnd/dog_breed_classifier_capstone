@@ -273,7 +273,7 @@ To access our local running web app from a public endpoint such as Internet, we 
 ngrok http 5000
 ``` 
 
-This will create a temporary URL _(http://ca38d987.ngrok.io)_ via which we can access our web app running in our local computer from other computers. Since we are using a free plan, so the addreess will change after some time. See [video demo](#video).
+This will create a temporary URL _(http://ca38d987.ngrok.io)_ via which we can access our web app running in our local computer from other computers. Since we are using a free plan, so the addreess will change after some time. For a full demo of the web app watch the [video](#video).
 
 **_Screenshot: ngrok reverse tunnelling_**
 
@@ -298,39 +298,29 @@ This project uses **Python 3.6.6** and the necessary libraries are mentioned in 
 |   requirements.txt			# Required packages
 |   
 +---app
-|   |   disaster_response.py	# Flask file that runs the app
+|   |   dog_app.py            	# Flask file that runs the app
 |   |   forms.py				# Forms used in the app
 |   |   site.db					# database to save user's messages
 |   |   
 |   +---static
 |   |   |   main.css    		# main stylesheet
 |   |   |   
-|   |   \---msg_pics
-|   |           msg_pics.zip	# image folder used in the app
+|   |   \---uploaded_pics       # image folder used in the app
 |   |           
 |   \---templates
-|           about.html			# about page
-|           create_msg.html		# new message page
-|           graph1.html			# graph1 page
-|           graph2.html			# graph2 page
-|           graph3.html			# graph3 page
-|           graph4.html			# graph4 page
-|           graph5.html			# graph5 page
-|           home.html			# home page
-|           layout.html			# layout page
-|           msg.html			# message page
-|           
-+---data
-|       DisasterResponse.db  	# cleaned database
-|       disaster_categories.csv	# given categories dataset
-|       disaster_messages.csv	# given messages dataset
-|       process_data.py			# performs ELT pipeline
+|   |       about.html			# about page
+|   |       post.html		    # new message page
+|   |       graph1.html			# graph1 page
+|   |       home.html			# home page
+|   |       layout.html			# layout page
+|   |                  
+|	+---data                    # data folder to hold dog and human images dataset 
+|   | 
+|   +---model   				# saved model folder 
 |       
-+---gif
-|       Images folder used in Readme.md
-|       
-\---models
-        train_classifier.py		# performs classification task
++---dog_app_model1.ipynb        # notebook to implement model1 using pretrained VGG16 
++---dog_app_model2.ipynb        # notebook to implement model1 using pretrained VGG19
++---dog_app_error.ipynb         # notebook to visualization and error calculation        
 </pre>
 <hr/> 
 
