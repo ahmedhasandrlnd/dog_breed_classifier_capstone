@@ -241,13 +241,13 @@ The Flask web app serves three purposes:
 - Top5 Prediction
 
 ### Dog detection
-![dog breed](dog_breed.PNG)
+![dog breed](images/dog_breed.PNG)
 
 ### Human or Unknown Detection
-![human unknown](human_unknown.PNG)
+![human unknown](images/human_unknown.PNG)
 
 ### Top-5 Prediction
-![top-5](top5.PNG)
+![top-5](images/top5.PNG)
 
 
 
