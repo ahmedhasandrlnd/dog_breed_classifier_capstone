@@ -10,7 +10,9 @@
 - [Project Overview](#overview)
 - [Problem Statement](#statement)
 - [Metrics](#metrics)
-- [Data Exploration](#explore)
+- [Data Exploration and Visualization](#explore)
+- [Data Preprocessing](#preprocess)
+- [Implementation](#implement)
 - [Project Steps](#steps)
   - [Step 0](#step0): Import Datasets
   - [Step 1](#step1): Detect Humans
@@ -75,7 +77,7 @@ For example, if the number of test samples is 1000 and model classifies 950 of t
 [Back to Table of Content](#index)
 
 <a id='explore'></a>
-### Data Exploration
+### Data Exploration and Visualization
 From the train, test and valid dataset of dog images, we get the following distribution and statistics:
 ![train_dist](images/train_dist.PNG)
 ![test_dist](images/test_dist.PNG)
@@ -87,22 +89,22 @@ From the train, test and valid dataset of dog images, we get the following distr
 
 [Back to Table of Content](#index)
 
-<a id='steps'></a>
-## Project Steps
+<a id='preprocess'></a>
+### Data Preprocessing
+Each image in the train, valid and text dataset goes thorugh a number of preprocessing steps:
 
-The project is divided into following steps:
-
-<a id='step0'></a>
-### Step 0: Import Datasets
-
-- Loads the `Dog` and `Human` dataset
-- `Dog` dataset has 8351 images of 133 breeds
-- `Human` dataset has 13233 images
-- `Dog` dataset is divided into `train`,`test` and `valid` for training, testing and validation purpose
+1. Train and Valid Dataset images goes through a series of transforms.RandomRotation(10), transforms.Resize(256), transforms.CenterCrop(224),transforms.RandomHorizontalFlip()
+1. Test Dataset images goes through a series of transforms.Resize(256) and transforms.CenterCrop(224) 
+1. Normalize: Each image is normalized by mean=[0.485, 0.456, 0.406] and std=[0.229, 0.224, 0.225]
 
 <hr/> 
 
 [Back to Table of Content](#index)
+
+
+<a id='implement'></a>
+### Implementation
+The implementation of the project is divided into following steps:
 
 <a id='step1'></a>
 ### Step 1: Detect Humans
@@ -139,6 +141,7 @@ In Step 4, we used transfer learning to create a CNN using VGG-16 bottleneck fea
 
 [Back to Table of Content](#index)
 
+
 <a id='step6'></a>
 ### Step 6: Write your Algorithm
 In this step, we write an algorithm that accepts a file path to an image and first determines whether the image contains a human, dog, or neither. Then,
@@ -147,6 +150,21 @@ In this step, we write an algorithm that accepts a file path to an image and fir
 * if neither is detected in the image, provide output that indicates an error.
 
 [Back to Table of Content](#index)
+
+<hr/> 
+
+[Back to Table of Content](#index)
+
+
+
+
+
+
+
+
+
+
+
 
 <a id='step7'></a>
 ### Step 7: Test Your Algorithm
