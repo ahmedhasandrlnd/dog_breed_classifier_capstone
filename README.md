@@ -10,6 +10,7 @@
 - [Project Overview](#overview)
 - [Problem Statement](#statement)
 - [Metrics](#metrics)
+- [Data Exploration](#explore)
 - [Project Steps](#steps)
   - [Step 0](#step0): Import Datasets
   - [Step 1](#step1): Detect Humans
@@ -49,7 +50,7 @@
 <a id='overview'></a>
 ## Project Overview
 <img src="images/Brittany.jpg" width="100"> | <img src="images/Welsh_springer_spaniel.jpg" width="200">
-<p> If you look at the two dog pictures above, you might thought they are the same breed. But, you would be surprised to know that they are quite different. The left one is Brittany, and the right one Welsh Springer Spaniel. There are thousands of different dog breeds in the world. Some of them are so visually distinct  that it is easily possible to tell their breeds from their images. But, for some breeds like the above image pair, it is quite difficult to distinguish them. In order to solve this problem, I want to leverage the state of art of image classification model on Imagenet to teach computer to predict dog's breed from an image by training them using thousand of labeled dog images. <br/>
+<p> If you look at the two dog pictures above, you might thought they are the same breed. But, you would be surprised to know that they are quite different. The left one is Brittany, and the right one Welsh Springer Spaniel. There are thousands of different dog breeds in the world. Some of them are so visually distinct  that it is easily possible to tell their breeds from their images. But, for some breeds like the above image pair, it is quite difficult to distinguish them. In order to solve this problem, I want to leverage the state of art of image classification model on Imagenet to teach computer to predict dog's breed from an image by training it using 6680 images of 133 breeds, 835 images for validation and 836 images for testing. <br/>
 
 [Back to Table of Content](#index)
 
@@ -62,13 +63,26 @@
 
 <a id='metircs'></a>
 ## Metrics
-Since we are dealing with a multi-classification problem here and the data is slightly imbalanced, I used accuracy evaluation metric and negative log-likelihood. The main objective in a learning model is to reduce (minimize) the loss function's value with respect to the model's parameters by changing the weight vector values through different optimization methods, such as backpropagation in neural networks.
+Since we are dealing with a multi-classification problem here and the data is slightly imbalanced, I used accuracy evaluation metric and negative log-likelihood loss function. The main objective in a learning model is to reduce (minimize) the loss function's value with respect to the model's parameters by changing the weight vector values through different optimization methods, such as backpropagation in neural networks.
 
 Loss value implies how well or poorly a certain model behaves after each iteration of optimization. Ideally, one would expect the reduction of loss after each, or several, iteration(s).
 
 The accuracy of a model is usually determined after the model parameters are learned and fixed and no learning is taking place. Then the test samples are fed to the model and the number of mistakes (zero-one loss) the model makes are recorded, after comparison to the true targets. Then the percentage of misclassification is calculated.
 
 For example, if the number of test samples is 1000 and model classifies 950 of those correctly, then the model's accuracy is 95.0%. [Ref](https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model)<br/>
+<hr/> 
+
+[Back to Table of Content](#index)
+
+<a id='explore'></a>
+### Data Exploration
+From the train, test and valid dataset of dog images, we get the following distribution and statistics:
+![train_dist](images/train_dist.PNG)
+![test_dist](images/test_dist.PNG)
+![valid_dist](images/valid_dist.PNG)
+
+![stat](images/stat.PNG)
+
 <hr/> 
 
 [Back to Table of Content](#index)
