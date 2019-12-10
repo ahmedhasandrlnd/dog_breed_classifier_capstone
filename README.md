@@ -48,13 +48,13 @@
 <a id='overview'></a>
 ## Project Overview
 <img src="images/Brittany.jpg" width="100"> | <img src="images/Welsh_springer_spaniel.jpg" width="200">
-<p> If you look at the two dog pictures above, you might thought they are the same breed. But, you would be surprised to know that tehy are from two different breeds. The left one is Brittany, and the right one Welsh Springer Spaniel. There are thousands of different dog breeds in the world. Some of them are quite distinct visulally that it is easily possible to tell their breeds from images. But, for some breeds like the above image, it is quite difficult to distinguish them. In order to solve this problem, I want to leverage the state of art of image classification model on Imagenet and use the power to computer to learn dog's breed from thousand of labeled dog images.
+<p> If you look at the two dog pictures above, you might thought they are the same breed. But, you would be surprised to know that they are quite different. The left one is Brittany, and the right one Welsh Springer Spaniel. There are thousands of different dog breeds in the world. Some of them are so visually distinct  that it is easily possible to tell their breeds from their images. But, for some breeds like the above image, it is quite difficult to distinguish them. In order to solve this problem, I want to leverage the state of art of image classification model on Imagenet and to teach computer to predict dog's breed from an image by training them using thousand of labeled dog images. <br/>
 
 [Back to Table of Content](#index)
 
 <a id='statement'></a>
 ## Problem Statement
- Aside from the big prblem of dog breed classification, we would like to tackle two minor but interesting problem using computer vision and machine learning techniques- human face detection and dog detection. Using these three solutions, I would like to build an application that could be used as part of a mobile or web app. This application  will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. If it detects neither a dog nor a human, it will give an appropriate message. <br/>
+ Aside from the big problem of dog breed classification, we would like to tackle two minor but interesting problems as well such as human face detection and dog detection using computer vision and machine learning techniques. Using these three solutions, I would like to build an application that could be used as part of a mobile or web app. This application  will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. If it detects neither a dog nor a human, it will give an appropriate error message. <br/>
 <hr/> 
 
 [Back to Table of Content](#index)
