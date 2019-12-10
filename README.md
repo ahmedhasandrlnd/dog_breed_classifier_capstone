@@ -208,7 +208,30 @@ It also couldn’t distinguish between Mastiff and Bullmastiff, which is a mix b
 
 [Back to Table of Content](#index)
 
+<a id='reflection'></a>
+### Reflection
 
+These are the intersting or difficult aspects of this present application:
+1. __GPU TRAINING__: The traing requires a lot of computational power and hence it is impossible to do the project without GPU. I have done the traing in my local laptop equipped with GTX 1060 GPU. Even though it has 6GB RAM, but it happened that when I tried to train two transfer models on a same notebook, the GPU ran out of memory. So we train different transfer models in different notebooks to overcome the situation.
+1. __WEB DEPLOYMENT__: Due to some credit problem, we haven't tried to deploy our application in an external server. But we have used ngrok, which provide us a public URL for our application running in local web server.
+1. __KERAS vs PYTORCH__: Due to my prevoius familiarity with Pytorch, I have implemented all model using Pytorch instead of Keras with the approval of my mentor.  
+
+
+[Back to Table of Content](#index)
+
+
+<a id='improvement'></a>
+### Improvement
+
+These are the improvement ideas on this present application:
+1. __AUGMENT THE TRAINING DATA__: Augmenting the training and/or validation set might help improve model performance.
+1. __DIFFERENT PRETRAINED MODEL__: In our future project, we would like to use other pretrained models such as Densenet, Resnet or Inception. 
+1. __OVERLAY DOG EARS ON DETECTED HUMAN HEADS:__ Overlay a Snapchat-like filter with dog ears on detected human heads. You can determine where to place the ears through the use of the OpenCV face detector, which returns a bounding box for the face. If you would also like to overlay a dog nose filter, some nice tutorials for facial keypoints detection exist [here](https://www.kaggle.com/c/facial-keypoints-detection/details/deep-learning-tutorial).
+1. __ADD FUNCTIONALITY FOR DOG MUTTS__: Currently, if a dog appears 51% German Shephard and 49% poodle, only the German Shephard breed is returned. The algorithm is currently guaranteed to fail for every mixed breed dog. Of course, if a dog is predicted as 99.5% Labrador, it is still worthwhile to round this to 100% and return a single breed; so, you will have to find a nice balance.
+1. __AWS, GCP or AZURE DEPLOYMENT__: It would be a good learning experience if we could depoly our web application to AWS, GCP or AZURE platform.
+
+
+[Back to Table of Content](#index)
 
 
 
@@ -363,28 +386,7 @@ As we can see from the [distribution of messages categories](#imbalance), the da
 
 [Back to Table of Content](#index)
 
-<a id='reflection'></a>
-### Reflection
 
-These are the intersting or difficult aspects of this present application:
-1. __GPU TRAINING__: The traing requires a lot of computational power and hence it is impossible to do the project without GPU. I have done the traing in my local laptop equipped with GTX 1060 GPU. Even though it has 6GB RAM, but it happened that when I tried to train two transfer models on a same notebook, the GPU ran out of memory. So we train different transfer models in different notebooks to overcome the situation.
-1. __WEB DEPLOYMENT__: Due to some credit problem, we haven't tried to deploy our application in an external server. But we have used ngrok, which provide us a public URL for our application running in local web server. 
-
-
-[Back to Table of Content](#index)
-
-
-<a id='improvement'></a>
-### Improvement
-
-These are the improvement ideas on this present application:
-1. __AUGMENT THE TRAINING DATA:__ Augmenting the training and/or validation set might help improve model performance.
-1. __OVERLAY DOG EARS ON DETECTED HUMAN HEADS:__ Overlay a Snapchat-like filter with dog ears on detected human heads. You can determine where to place the ears through the use of the OpenCV face detector, which returns a bounding box for the face. If you would also like to overlay a dog nose filter, some nice tutorials for facial keypoints detection exist [here](https://www.kaggle.com/c/facial-keypoints-detection/details/deep-learning-tutorial).
-1. __ADD FUNCTIONALITY FOR DOG MUTTS:__ Currently, if a dog appears 51% German Shephard and 49% poodle, only the German Shephard breed is returned. The algorithm is currently guaranteed to fail for every mixed breed dog. Of course, if a dog is predicted as 99.5% Labrador, it is still worthwhile to round this to 100% and return a single breed; so, you will have to find a nice balance.
-1. __AWS, GCP or AZURE DEPLOYMENT__: It would be a good learning experience if we could depoly our web application to AWS, GCP or AZURE platform.
-
-
-[Back to Table of Content](#index)
 
 <a id='sw'></a>
 
