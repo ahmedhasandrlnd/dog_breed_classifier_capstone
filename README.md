@@ -165,7 +165,7 @@ In this step, we write an algorithm that accepts a file path to an image and fir
 
 <a id='refine'></a>
 ## Refinement
-In our first design, we have used transfer learning to create a CNN using VGG-16 bottleneck features. As a refinement, in our second model we have used transfer learning to create a CNN using VGG-19 bottleneck features. Second model gives slightly better results with better performance metrics. Please refer to the [next section](#evaluation) for a detailed comparison. Here are some missclassified images (top-5 error images) from the first model prediction:
+In our first design, we have used transfer learning to create a CNN using VGG-16 bottleneck features. As a refinement, in our second model we have used transfer learning to create a CNN using VGG-19 bottleneck features. Second model gives slightly better results with better performance metrics. Please refer to the [next section](#eval) for a detailed comparison. Here are some missclassified images (top-5 error images) from the first model prediction:
 ![top-5](images/model1_top5.PNG)
 
 Here are some missclassified images (top-5 error images) from the second model prediction:
@@ -180,8 +180,8 @@ From these two figures, we can see that out of these 9 images, 5 images were mis
 
 
 <a id='eval'></a>
-## RModel Evaluation and Validation
-Here we are going to show the comparison of performance metrics of two of our models using the transfer learning techniques. he first model used VGG-16 bottleneck features and the second model used VGG-19 bottleneck features. Out of 836 test images, the first model misclassified 128 images as top-1 error, 21 images as top-3 error and 10 images as top-1 error which gives a top-1 error rate of 15.3%, top-3 erro rate of 2.5% and top-5 error rate of 1.19%. On the contrary, the second model misclassified 110 images as top-1 error, 17 images as top-3 error and 9 images as top-1 error which gives a top-1 error rate of 13.5%, top-3 erro rate of 2.05% and top-5 error rate of 1.07%.
+## Model Evaluation and Validation
+Now, we are going to show the comparison of performance metrics of two of our models using the transfer learning techniques. The first model used VGG-16 bottleneck features and the second model used VGG-19 bottleneck features. Out of 836 test images, the first model misclassified 128 images as top-1 error, 21 images as top-3 error and 10 images as top-1 error which gives a top-1 error rate of 15.3%, top-3 erro rate of 2.5% and top-5 error rate of 1.19%. On the contrary, the second model misclassified 110 images as top-1 error, 17 images as top-3 error and 9 images as top-1 error which gives a top-1 error rate of 13.5%, top-3 erro rate of 2.05% and top-5 error rate of 1.07%.
 <br/>
 <hr/> 
 
