@@ -13,8 +13,6 @@
 - [Data Exploration and Visualization](#explore)
 - [Data Preprocessing](#preprocess)
 - [Implementation](#implement)
-- [Project Steps](#steps)
-  - [Step 0](#step0): Import Datasets
   - [Step 1](#step1): Detect Humans
   - [Step 2](#step2): Detect Dogs
   - [Step 3](#step3): Create a CNN to Classify Dog Breeds (from Scratch)
@@ -71,7 +69,14 @@ Loss value implies how well or poorly a certain model behaves after each iterati
 
 The accuracy of a model is usually determined after the model parameters are learned and fixed and no learning is taking place. Then the test samples are fed to the model and the number of mistakes (zero-one loss) the model makes are recorded, after comparison to the true targets. Then the percentage of misclassification is calculated.
 
-For example, if the number of test samples is 1000 and model classifies 950 of those correctly, then the model's accuracy is 95.0%. [Ref](https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model)<br/>
+For example, if the number of test samples is 1000 and model classifies 950 of those correctly, then the model's accuracy is 95.0%. [Ref](https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model)
+
+Also, we have employed 3 types of error metrics namely top-1, top-3 and top-5 error. In the case of top-1 error, we check if the top class (the one having the highest probability) is not the same as the target label.
+
+In the case of top-3 errore, we check if the target label is not one of our top 3 predictions (the 3 ones with the highest probabilities)
+
+In the case of top-5 error, we check if the target label is not one of our top 5 predictions (the 5 ones with the highest probabilities). 
+<br/>
 <hr/> 
 
 [Back to Table of Content](#index)
@@ -136,8 +141,8 @@ To reduce training time without sacrifysing accuracy, we have used the pre-train
 [Back to Table of Content](#index)
 
 <a id='step5'></a>
-### Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
-In Step 4, we used transfer learning to create a CNN using VGG-16 bottleneck features. In this section, we used the bottleneck features from a different pre-trained model such as VGG19. 
+### Step 5: Create a CNN to Classify Dog Breeds (using a different Transfer Learning)- Refinement
+In Step 5, we used transfer learning to create a CNN using VGG-19 bottleneck features. In this section, we used the bottleneck features from a different pre-trained model such as VGG19. 
 
 [Back to Table of Content](#index)
 
