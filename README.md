@@ -190,12 +190,12 @@ The performance can be further improved by using some other pretrained model suc
 <a id='just'></a>
 ## Justification
 Due to less number of dog images of certain breeds, the model finds it difficult to predict some breeds.  
-We have observed that the model couldn’t classify between Great pyrenees and Kuvasz, which both are white, big, and fluffy. <br/>
-[Great pyrenees]<img src="images/Great_pyrenees.jpg" width="20%">| [Kuvasz]<img src="images/Kuvasz.jpg" width="30%"> <br/>
-Also we have found the model fails to correctly classify german wirehaired pointer and wirehaired pointing griffon which look quite similar. <br/>
-[german wirehaired pointer]<img src="images/German_wirehaired_pointer.jpg" width="20%">| [wirehaired pointing griffon]<img src="images/Wirehaired_pointing_griffon.jpg" width="20%"> <br/>
+We have observed that the model couldn’t classify between Great pyrenees and Kuvasz, which both are white, big, and fluffy. <br/><br/>
+[Great pyrenees]<img src="images/Great_pyrenees.jpg" width="20%">| [Kuvasz]<img src="images/Kuvasz.jpg" width="30%"> <br/><br/>
+Also we have found the model fails to correctly classify german wirehaired pointer and wirehaired pointing griffon which look quite similar. <br/><br/>
+[german wirehaired pointer]<img src="images/German_wirehaired_pointer.jpg" width="20%">| [wirehaired pointing griffon]<img src="images/Wirehaired_pointing_griffon.jpg" width="20%"> <br/><br/>
 It also couldn’t distinguish between Mastiff and Bullmastiff, which is a mix between a bulldog and a mastiff.
-<br/>
+<br/><br/>
 [Bulldog]<img src="images/Bulldog.jpg" width="20%">|[Mastiff]<img src="images/Mastiff.jpg" width="20%">|[Bullmastiff]<img src="images/Bullmastiff.jpg" width="20%"> <br/>
 <hr/> 
 
@@ -205,7 +205,7 @@ It also couldn’t distinguish between Mastiff and Bullmastiff, which is a mix b
 ### Reflection
 
 These are the intersting or difficult aspects of this present application:
-1. __GPU TRAINING__: The traing requires a lot of computational power and hence it is impossible to do the project without GPU. I have done the traing in my local laptop equipped with GTX 1060 GPU. Even though it has 6GB RAM, but it happened that when I tried to train two transfer models on a same notebook, the GPU ran out of memory. So we train different transfer models in different notebooks to overcome the situation.
+1. __GPU TRAINING__: The training requires a lot of computational power and hence it is impossible to do the project without GPU. I have done the training in my local laptop equipped with GTX 1060 GPU. Even though it has 6GB RAM, but it happened that when I tried to train two transfer models on a same notebook, the GPU ran out of memory. So we train different transfer models in different notebooks to overcome the situation.
 1. __WEB DEPLOYMENT__: Due to some credit problem, we haven't tried to deploy our application in an external server. But we have used ngrok, which provide us a public URL for our application running in local web server.
 1. __KERAS vs PYTORCH__: Due to my prevoius familiarity with Pytorch, I have implemented all model using Pytorch instead of Keras with the approval of my mentor.  
 
@@ -273,7 +273,7 @@ To access our local running web app from a public endpoint such as Internet, we 
 ngrok http 5000
 ``` 
 
-This will create a temporary URL _(http://ca38d987.ngrok.io)_ via which we can access our web app running in our local computer from other computers. Since we are using a free plan, so the addreess will change after some time. For a full demo of the web app watch the [video](#video).
+This will create a temporary URL _(http://ca38d987.ngrok.io)_ via which we can access our web app running in our local computer from other computers. **Since we are using a free plan, so the addreess will change after some time**. For a full demo of the web app watch the [video](#video).
 
 **_Screenshot: ngrok reverse tunnelling_**
 
